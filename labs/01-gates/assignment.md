@@ -1,4 +1,4 @@
-# Lab 1: YOUR_FIRSTNAME LASTNAME
+# Lab 1: Marian Dvořáček
 
 ### De Morgan's laws
 
@@ -12,8 +12,8 @@
 architecture dataflow of demorgan is
 begin
     f_org_o  <= (not(b_i) and a_i) or (not(c_i) and not(b_i));
-    f_nand_o <= -- WRITE YOUR CODE HERE
-    f_nor_o  <= -- WRITE YOUR CODE HERE
+    f_nand_o <= ((b_i nand b_i) nand a_i) nand ((c_i nand c_i) nand (b_i nand b_i)); -- WRITE YOUR CODE HERE
+    f_nor_o  <= ((b_i nor (a_i nor a_i)) nor (c_i nor b_i)) nor ((b_i nor (a_i nor a_i)) nor (c_i nor b_i)); -- WRITE YOUR CODE HERE
 end architecture dataflow;
 ```
 
@@ -21,14 +21,14 @@ end architecture dataflow;
 
 | **c** | **b** |**a** | **f(c,b,a)_ORG** | **f(c,b,a)_NAND** | **f(c,b,a)_NOR** |
 | :-: | :-: | :-: | :-: | :-: | :-: |
-| 0 | 0 | 0 |  |  |  |
-| 0 | 0 | 1 |  |  |  |
-| 0 | 1 | 0 |  |  |  |
-| 0 | 1 | 1 |  |  |  |
-| 1 | 0 | 0 |  |  |  |
-| 1 | 0 | 1 |  |  |  |
-| 1 | 1 | 0 |  |  |  |
-| 1 | 1 | 1 |  |  |  |
+| 0 | 0 | 0 | 1 | 1 | 1 |
+| 0 | 0 | 1 | 1 | 1 | 1 |
+| 0 | 1 | 0 | 0 | 0 | 0 |
+| 0 | 1 | 1 | 0 | 0 | 0 |
+| 1 | 0 | 0 | 0 | 0 | 0 |
+| 1 | 0 | 1 | 1 | 1 | 1 |
+| 1 | 1 | 0 | 0 | 0 | 0 |
+| 1 | 1 | 1 | 0 | 0 | 0 |
 
 ### Distributive laws
 
@@ -38,5 +38,4 @@ end architecture dataflow;
 
 2. Link to your public EDA Playground example:
 
-   [https://www.edaplayground.com/...](https://www.edaplayground.com/...)
-
+   [https://www.edaplayground.com/playgrounds/user/362189](https://www.edaplayground.com/playgrounds/user/362189)
