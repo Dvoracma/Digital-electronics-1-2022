@@ -15,7 +15,7 @@ end architecture Behavioral;
 
 2. Screenshot with simulated time waveforms. Always display all inputs and outputs (display the inputs at the top of the image, the outputs below them) at the appropriate time scale!
 
-   ![https://raw.githubusercontent.com/Dvoracma/Digital-electronics-1-2022/main/labs/03-vivado/image.png]()
+   ![https://raw.githubusercontent.com/Dvoracma/Digital-electronics-1-2022/main/labs/03-vivado/image.png](https://raw.githubusercontent.com/Dvoracma/Digital-electronics-1-2022/main/labs/03-vivado/image.png)
 
 3. Listing of pin assignments for the Nexys A7 board in `nexys-a7-50t.xdc`. **DO NOT list** the whole file, just your switch and LED settings.
 
