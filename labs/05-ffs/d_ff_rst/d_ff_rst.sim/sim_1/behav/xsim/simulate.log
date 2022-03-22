@@ -1,0 +1,10 @@
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+Note: Stimulus process started
+Time: 0 ps  Iteration: 0  Process: /tb_ff_rst/p_stimulus  File: D:/Documents/d_ff_rst/d_ff_rst.srcs/sim_1/new/tb_ff_rst.vhd
+Note: Stimulus process started
+Time: 13 ns  Iteration: 0  Process: /tb_ff_rst/p_stimulus  File: D:/Documents/d_ff_rst/d_ff_rst.srcs/sim_1/new/tb_ff_rst.vhd
+Note: Stimulus process started
+Time: 26 ns  Iteration: 0  Process: /tb_ff_rst/p_stimulus  File: D:/Documents/d_ff_rst/d_ff_rst.srcs/sim_1/new/tb_ff_rst.vhd
+Note: Stimulus process finished
+Time: 39 ns  Iteration: 0  Process: /tb_ff_rst/p_stimulus  File: D:/Documents/d_ff_rst/d_ff_rst.srcs/sim_1/new/tb_ff_rst.vhd
