@@ -1,0 +1,39 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Wed Mar 23 14:44:55 2022
+# Process ID: 1240
+# Current directory: D:/Documents/xdvora1x/Digital-electronics-1-2022/labs/06-counter/counter/counter.runs/synth_1
+# Command line: vivado.exe -log top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
+# Log file: D:/Documents/xdvora1x/Digital-electronics-1-2022/labs/06-counter/counter/counter.runs/synth_1/top.vds
+# Journal file: D:/Documents/xdvora1x/Digital-electronics-1-2022/labs/06-counter/counter/counter.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source top.tcl -notrace
+Command: synth_design -top top -part xc7a50ticsg324-1L
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a50ti'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a50ti'
+INFO: [Device 21-403] Loading part xc7a50ticsg324-1L
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 1680
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1013.160 ; gain = 0.000
+---------------------------------------------------------------------------------
+ERROR: [Synth 8-1779] cannot read from 'out' object btnc ; use 'buffer' or 'inout' [D:/Documents/xdvora1x/Digital-electronics-1-2022/labs/06-counter/counter/counter.srcs/sources_1/new/top.vhd:66]
+WARNING: [Synth 8-2040] formal port reset of mode in cannot be associated with actual port btnc of mode out [D:/Documents/xdvora1x/Digital-electronics-1-2022/labs/06-counter/counter/counter.srcs/sources_1/new/top.vhd:66]
+ERROR: [Synth 8-1085] btnc with mode 'out' cannot be read [D:/Documents/xdvora1x/Digital-electronics-1-2022/labs/06-counter/counter/counter.srcs/sources_1/new/top.vhd:66]
+ERROR: [Synth 8-1779] cannot read from 'out' object btnc ; use 'buffer' or 'inout' [D:/Documents/xdvora1x/Digital-electronics-1-2022/labs/06-counter/counter/counter.srcs/sources_1/new/top.vhd:78]
+WARNING: [Synth 8-2040] formal port reset of mode in cannot be associated with actual port btnc of mode out [D:/Documents/xdvora1x/Digital-electronics-1-2022/labs/06-counter/counter/counter.srcs/sources_1/new/top.vhd:78]
+ERROR: [Synth 8-1085] btnc with mode 'out' cannot be read [D:/Documents/xdvora1x/Digital-electronics-1-2022/labs/06-counter/counter/counter.srcs/sources_1/new/top.vhd:78]
+INFO: [Synth 8-2810] unit behavioral ignored due to previous errors [D:/Documents/xdvora1x/Digital-electronics-1-2022/labs/06-counter/counter/counter.srcs/sources_1/new/top.vhd:49]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1013.160 ; gain = 0.000
+---------------------------------------------------------------------------------
+RTL Elaboration failed
+INFO: [Common 17-83] Releasing license: Synthesis
+7 Infos, 2 Warnings, 0 Critical Warnings and 5 Errors encountered.
+synth_design failed
+ERROR: [Common 17-69] Command failed: Synthesis failed - please see the console or run log file for details
+INFO: [Common 17-206] Exiting Vivado at Wed Mar 23 14:45:09 2022...
